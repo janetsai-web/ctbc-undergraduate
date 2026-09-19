@@ -8,7 +8,7 @@ nav{position:sticky;top:0;z-index:9;background:rgba(7,26,52,.96);padding:14px 22
 .quick{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:38px}.quick a{background:#ffffff12;border:1px solid #ffffff22;color:#fff;text-decoration:none;border-radius:14px;padding:16px 12px;min-width:0}.quick small{display:block;color:var(--g);font-weight:900;margin-bottom:5px}
 section{max-width:1160px;margin:auto;padding:70px 24px}.head small{color:#a47c36;font-weight:900;letter-spacing:.13em}.head h2{font-size:clamp(28px,4vw,43px);margin:8px 0 10px}.head p{color:var(--m);line-height:1.8;margin-bottom:30px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px}.box b{font-size:18px}.box p{color:var(--m);line-height:1.7;margin-bottom:0}
-.road{display:grid;grid-template-columns:repeat(9,1fr);gap:8px}.step{border:1px solid var(--line);background:#fff;border-radius:14px;padding:16px 7px;cursor:pointer;color:var(--ink);min-height:92px}.step.active,.step:hover{border-color:var(--g);box-shadow:0 8px 24px #0c1c3315;transform:translateY(-2px)}.step small{display:block;color:#a47c36;font-weight:900;margin-bottom:7px}.step b{font-size:13px}
+.road{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px;width:100%}.step{border:1px solid var(--line);background:#fff;border-radius:14px;padding:16px 7px;cursor:pointer;color:var(--ink);min-height:92px}.step.active,.step:hover{border-color:var(--g);box-shadow:0 8px 24px #0c1c3315;transform:translateY(-2px)}.step small{display:block;color:#a47c36;font-weight:900;margin-bottom:7px}.step b{font-size:13px}
 .detail{margin-top:22px;background:var(--n);color:#fff;border-radius:20px;padding:28px 32px;border-left:5px solid var(--g)}.detail small{color:var(--g);font-weight:900}.detail h3{font-size:24px;margin:8px 0}.detail p{color:#dce4ee;line-height:1.8;margin:0}
 .band{max-width:none;background:#fff}.band>div{max-width:1160px;margin:auto}
 .check{counter-reset:x}.check .box:before{counter-increment:x;content:"STEP " counter(x,decimal-leading-zero);display:block;color:#a47c36;font-size:12px;font-weight:900;margin-bottom:10px}
@@ -134,7 +134,7 @@ const data=[
 ["05","完成各項畢業門檻","依所屬學系及入學年度規定，完成各項畢業條件。"],
 ["06","確認畢業學分","進入高年級後，定期檢視個人修業紀錄，確認必修、選修、通識及各類學分均符合畢業規定。"],
 ["07","完成畢業審查","畢業前依學校規定辦理畢業資格審查，確認學分及各項畢業條件皆已完成。"],
-["08","取得學士學位","完成應修學分及所有畢業條件，正式取得學士學位。"];
+["08","取得學士學位","完成應修學分及所有畢業條件，正式取得學士學位。"]];
 const r=document.getElementById("road");function show(i){document.querySelectorAll(".step").forEach((x,j)=>x.classList.toggle("active",i===j));dn.textContent=data[i][0]+" · ROADMAP";dt.textContent=data[i][0]+"｜"+data[i][1];dd.textContent=data[i][2]}
 data.forEach((x,i)=>{let b=document.createElement("button");b.className="step";b.innerHTML=`<small>${x[0]}</small><b>${x[1]}</b>`;b.onclick=()=>show(i);r.appendChild(b)});show(0);
 
