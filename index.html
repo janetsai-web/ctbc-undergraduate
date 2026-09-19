@@ -5,7 +5,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",sans-serif;background:var(--bg);color:var(--ink)}
 nav{position:sticky;top:0;z-index:9;background:rgba(7,26,52,.96);padding:14px 22px;display:flex;justify-content:space-between;align-items:center;color:#fff}nav b{letter-spacing:.08em}nav div{display:flex;gap:18px;flex-wrap:wrap}nav a{color:#dbe4ef;text-decoration:none;font-size:13px}
 .hero{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:85px 24px}.inner{max-width:1160px;margin:auto}.tag{color:var(--g);font-size:13px;font-weight:900;letter-spacing:.16em}.hero h1{font-size:clamp(38px,6vw,65px);margin:18px 0}.hero p{max-width:800px;color:#dce5f0;line-height:1.85;font-size:18px}
-.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}.quick a{background:#ffffff12;border:1px solid #ffffff22;color:#fff;text-decoration:none;border-radius:14px;padding:18px}.quick small{display:block;color:var(--g);font-weight:900;margin-bottom:5px}
+.quick{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:38px}.quick a{background:#ffffff12;border:1px solid #ffffff22;color:#fff;text-decoration:none;border-radius:14px;padding:16px 12px;min-width:0}.quick small{display:block;color:var(--g);font-weight:900;margin-bottom:5px}
 section{max-width:1160px;margin:auto;padding:70px 24px}.head small{color:#a47c36;font-weight:900;letter-spacing:.13em}.head h2{font-size:clamp(28px,4vw,43px);margin:8px 0 10px}.head p{color:var(--m);line-height:1.8;margin-bottom:30px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px}.box b{font-size:18px}.box p{color:var(--m);line-height:1.7;margin-bottom:0}
 .road{display:grid;grid-template-columns:repeat(9,1fr);gap:8px}.step{border:1px solid var(--line);background:#fff;border-radius:14px;padding:16px 7px;cursor:pointer;color:var(--ink);min-height:92px}.step.active,.step:hover{border-color:var(--g);box-shadow:0 8px 24px #0c1c3315;transform:translateY(-2px)}.step small{display:block;color:#a47c36;font-weight:900;margin-bottom:7px}.step b{font-size:13px}
@@ -63,9 +63,9 @@ footer{text-align:center;background:#041225;color:#b9c6d7;padding:25px}
 .graduation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:700px){.graduation-grid{grid-template-columns:1fr}}
 </style></head><body>
-<nav><b>中信金融管理學院</b><div><a href="#roadmap">學習藍圖</a><a href="#credits">六系課程規劃</a><a href="#course-selection">選課說明</a><a href="#new">入學重要事項</a><a href="#graduation">畢業準備</a><a href="#learning">多元學習</a></div></nav>
-<header class="hero"><div class="inner"><div class="tag">CTBC BUSINESS SCHOOL · 115-1</div><h1>大學部學習導航</h1><p>從入學開始，掌握修課、專業學習、多元發展與畢業流程。這是一份提供大學部學生從新生到取得學士學位的完整學習導航。</p>
-<div class="quick"><a href="#roadmap"><small>01</small>學習與畢業規劃</a><a href="#credits"><small>02</small>修課與學分規劃</a><a href="#new"><small>03</small>入學重要事項</a><a href="#learning"><small>04</small>多元學習與發展</a></div></div></header>
+<nav><b>中信金融管理學院</b><div><a href="#roadmap">學習藍圖</a><a href="#credits">六系課程規劃</a><a href="#course-selection">選課說明</a><a href="#new">入學重要事項</a><a href="#graduation">畢業準備</a></div></nav>
+<header class="hero"><div class="inner"><div class="tag">CTBC BUSINESS SCHOOL · 115-1</div><h1>大學部學習導航</h1><p>從入學開始，掌握課程規劃、選課、修課與畢業流程。這是一份提供大學部學生從新生到取得學士學位的課務學習導航。</p>
+<div class="quick"><a href="#roadmap"><small>01</small>大學部學習與畢業規劃</a><a href="#credits"><small>02</small>六系課程規劃</a><a href="#course-selection"><small>03</small>選課說明</a><a href="#new"><small>04</small>入學後重要事項</a><a href="#graduation"><small>05</small>畢業前重要事項</a></div></div></header>
 
 <section id="roadmap"><div class="head"><small>01 · UNDERGRADUATE ROADMAP</small><h2>大學部學習與畢業規劃</h2><p>從大一入學開始，先看懂四年的修課方向與畢業條件。點選每一個階段，可查看該階段要完成的事項。</p></div><div class="road" id="road"></div><div class="detail"><small id="dn"></small><h3 id="dt"></h3><p id="dd"></p></div></section>
 
@@ -113,10 +113,9 @@ footer{text-align:center;background:#041225;color:#b9c6d7;padding:25px}
 <div class="band"><section id="graduation"><div class="head"><small>05 · GRADUATION REQUIREMENTS</small><h2>畢業前，別忘了完成</h2><p>除了修滿規定學分，也要確認所屬學系及入學年度規定的各項畢業條件。</p></div>
 <div class="grid graduation-grid"><div class="box"><b>必修與選修學分</b><p>確認各類課程及總畢業學分均符合規定。</p></div><div class="box"><b>畢業門檻</b><p>依所屬學系規定完成語言、專業能力或其他畢業條件。</p></div><div class="box"><b>修業紀錄確認</b><p>高年級應主動檢視個人修業紀錄，及早處理缺修或學分問題。</p></div><div class="box"><b>畢業資格審查</b><p>依學校時程完成畢業資格確認，確保各項條件均已達成。</p></div></div></section></div>
 
-<section id="learning"><div class="head"><small>06 · LEARNING OPPORTUNITIES</small><h2>多元學習與發展</h2><p>大學四年不只有課堂。依個人目標安排不同學習機會，累積實務、國際與跨領域經驗。</p></div>
-<div class="grid"><div class="box"><b>企業實習</b><p>透過實務場域了解產業運作，提早累積職場經驗與專業能力。</p></div><div class="box"><b>海外交換／微留學</b><p>拓展國際視野與跨文化學習經驗，建立不同於課堂的學習歷程。</p></div><div class="box"><b>學分學程／跨域學習</b><p>依興趣與職涯方向選擇跨領域課程，培養第二專長。</p></div><div class="box"><b>競賽與校內外活動</b><p>透過競賽、專題及活動參與，把所學轉化為實際成果。</p></div><div class="box"><b>五年一貫</b><p>有意繼續攻讀碩士者，可提早了解五年一貫相關申請及修課規定。</p></div><div class="box"><b>職涯探索</b><p>從大學期間逐步確認未來方向，銜接就業、研究所或其他生涯規劃。</p></div></div></section>
 
-<section class="next"><div><div class="head"><small>NEXT STEP</small><h2>從今天開始，逐步完成你的大學規劃</h2><p>不需要一次完成所有事情，但要清楚知道自己目前在哪個階段，以及下一步要做什麼。</p></div><div class="grid"><div class="box"><b>STEP 01</b><p>確認系所、學號與註冊狀態</p></div><div class="box"><b>STEP 02</b><p>了解所屬學系課程規劃與畢業條件</p></div><div class="box"><b>STEP 03</b><p>依規劃完成各學期必修與選修課程</p></div><div class="box"><b>STEP 04</b><p>安排實習、海外學習或其他多元學習機會</p></div><div class="box"><b>STEP 05</b><p>完成畢業審查並取得學士學位</p></div></div></div></section>
+
+<section class="next"><div><div class="head"><small>NEXT STEP</small><h2>從今天開始，逐步完成你的大學規劃</h2><p>不需要一次完成所有事情，但要清楚知道自己目前在哪個階段，以及下一步要做什麼。</p></div><div class="grid"><div class="box"><b>STEP 01</b><p>確認系所、學號與註冊狀態</p></div><div class="box"><b>STEP 02</b><p>了解所屬學系課程規劃與畢業條件</p></div><div class="box"><b>STEP 03</b><p>依規劃完成各學期必修與選修課程</p></div><div class="box"><b>STEP 04</b><p>確認畢業學分並完成畢業資格審查</p></div></div></div></section>
 
 <div class="pdf-modal" id="pdfModal" onclick="if(event.target===this)closePdf()">
   <div class="pdf-shell">
@@ -130,13 +129,12 @@ footer{text-align:center;background:#041225;color:#b9c6d7;padding:25px}
 const data=[
 ["01","入學","確認所屬學系、學號及學籍資料，完成新生註冊、學生證申請及相關入學程序。"],
 ["02","了解畢業條件","確認所屬學系適用的課程規劃與畢業學分，了解校定必修、通識課程、系專業必修及選修等學分要求。"],
-["03","完成基礎與必修課程","依各學年度課程規劃完成校定必修、通識課程及系專業必修，建立基礎與專業能力。"],
-["04","規劃專業選修","依個人興趣及未來發展方向安排專業選修課程，並定期確認已修及尚缺學分，避免影響畢業進度。"],
-["05","探索多元學習機會","依個人生涯規劃參與實習、海外交換、微留學、學分學程、競賽或其他校內外學習活動，累積實務與國際學習經驗。"],
-["06","完成各項畢業門檻","依所屬學系及入學年度規定，完成語言能力、專業能力或其他相關畢業條件。"],
-["07","確認畢業學分","進入高年級後，定期檢視個人修業紀錄，確認必修、選修、通識及各類學分均符合畢業規定。"],
-["08","完成畢業審查","畢業前依學校規定辦理畢業資格審查，確認學分及各項畢業條件皆已完成。"],
-["09","取得學士學位","完成應修學分及所有畢業條件，正式取得學士學位，銜接就業、研究所或其他生涯發展。"]];
+["03","完成基礎與必修課程","依各學年度課程規劃完成校定必修、通識課程及系專業必修。"],
+["04","規劃專業選修","依修課規劃安排專業選修課程，並定期確認已修及尚缺學分，避免影響畢業進度。"],
+["05","完成各項畢業門檻","依所屬學系及入學年度規定，完成各項畢業條件。"],
+["06","確認畢業學分","進入高年級後，定期檢視個人修業紀錄，確認必修、選修、通識及各類學分均符合畢業規定。"],
+["07","完成畢業審查","畢業前依學校規定辦理畢業資格審查，確認學分及各項畢業條件皆已完成。"],
+["08","取得學士學位","完成應修學分及所有畢業條件，正式取得學士學位。"];
 const r=document.getElementById("road");function show(i){document.querySelectorAll(".step").forEach((x,j)=>x.classList.toggle("active",i===j));dn.textContent=data[i][0]+" · ROADMAP";dt.textContent=data[i][0]+"｜"+data[i][1];dd.textContent=data[i][2]}
 data.forEach((x,i)=>{let b=document.createElement("button");b.className="step";b.innerHTML=`<small>${x[0]}</small><b>${x[1]}</b>`;b.onclick=()=>show(i);r.appendChild(b)});show(0);
 
