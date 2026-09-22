@@ -194,7 +194,7 @@ footer{text-align:center;background:#041225;color:#b9c6d7;padding:25px}
 
 
 
-<section class="next"><div><div class="head"><small>NEXT STEP</small><h2>從今天開始，逐步完成你的大學規劃</h2><p>不需要一次完成所有事情，但要清楚知道自己目前在哪個階段，以及下一步要做什麼。</p></div><div class="grid"><div class="box"><b>STEP 01</b><p>確認系所、學號與註冊狀態</p></div><div class="box"><b>STEP 02</b><p>了解所屬學系課程規劃與畢業條件</p></div><div class="box"><b>STEP 03</b><p>依規劃完成各學期必修與選修課程</p></div><div class="box"><b>STEP 04</b><p>確認畢業學分並完成畢業資格審查</p></div></div></div></section>
+
 
 <div class="pdf-modal" id="pdfModal" onclick="if(event.target===this)closePdf()">
   <div class="pdf-shell">
@@ -202,17 +202,9 @@ footer{text-align:center;background:#041225;color:#b9c6d7;padding:25px}
     <iframe class="pdf-frame" id="pdfFrame" title="課程規劃 PDF"></iframe>
   </div>
 </div>
-<footer>115學年度第一學期｜中信金融管理學院｜大學部學習導航</footer>
-<script>
-function openPdf(title,src){document.getElementById("pdfTitle").textContent=title+"｜115學年度課程規劃";document.getElementById("pdfFrame").src=src;document.getElementById("pdfModal").classList.add("open");document.body.style.overflow="hidden"}
-function closePdf(){document.getElementById("pdfModal").classList.remove("open");document.getElementById("pdfFrame").src="";document.body.style.overflow=""}
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closePdf()});
-
-</script>
 <section id="faq">
   <div class="section-head">
-    <div class="eyebrow">FAQ</div>
-    <h2>常見 Q&amp;A</h2>
+<h2>常見 Q&amp;A</h2>
     <p>選課與修課常見問題整理，點選問題即可查看說明。</p>
   </div>
   <div class="faq-list">
@@ -227,5 +219,15 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closePdf()});
     <details><summary>畢業前要怎麼確認自己的學分是否足夠？</summary><p>請依所屬系所入學年度課程規劃，確認畢業總學分、校定核心、系專業必修、專業選修及其他畢業條件是否皆已完成。</p></details>
   </div>
 </section>
+
+<section class="next"><div><div class="head"><small>NEXT STEP</small><h2>從今天開始，逐步完成你的大學規劃</h2><p>不需要一次完成所有事情，但要清楚知道自己目前在哪個階段，以及下一步要做什麼。</p></div><div class="grid"><div class="box"><b>STEP 01</b><p>確認系所、學號與註冊狀態</p></div><div class="box"><b>STEP 02</b><p>了解所屬學系課程規劃與畢業條件</p></div><div class="box"><b>STEP 03</b><p>依規劃完成各學期必修與選修課程</p></div><div class="box"><b>STEP 04</b><p>確認畢業學分並完成畢業資格審查</p></div></div></div></section>
+<footer>115學年度第一學期｜中信金融管理學院｜大學部學習導航</footer>
+<script>
+function openPdf(title,src){document.getElementById("pdfTitle").textContent=title+"｜115學年度課程規劃";document.getElementById("pdfFrame").src=src;document.getElementById("pdfModal").classList.add("open");document.body.style.overflow="hidden"}
+function closePdf(){document.getElementById("pdfModal").classList.remove("open");document.getElementById("pdfFrame").src="";document.body.style.overflow=""}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closePdf()});
+
+</script>
+
 
 </body></html>
